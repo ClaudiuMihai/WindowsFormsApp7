@@ -63,7 +63,7 @@ namespace WindowsFormsApp7
             if (!char.IsDigit(x) && x != 8 && x != 46)
             {
                 e.Handled = true;
-                MessageBox.Show("salut,eu sunt Vasilica");
+                MessageBox.Show("Te rog, introdu un numar!");
                 
             }
                     

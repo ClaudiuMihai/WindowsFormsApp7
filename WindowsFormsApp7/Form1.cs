@@ -25,10 +25,19 @@ namespace WindowsFormsApp7
 
 
         private void button1_Click(object sender, EventArgs e)
+
         {
             double i, ok = 1;
             int n = 0;
-            n = Convert.ToInt32(textBox1.Text);
+            try
+            {
+                n = Convert.ToInt32(textBox1.Text);
+            }
+            catch (Exception)
+            {
+
+                n =0;
+            }
             for (i = 2; i <= n / 2; i++)
 
             {
@@ -44,12 +53,21 @@ namespace WindowsFormsApp7
             if (ok == 1)
             {
                 BackColor = Color.Green;
+                label1.Text = ("Numarul Dumneavoastra este PRIM");
             }
             else
             {
                 BackColor = Color.Red;
+                label1.Text = ("Numarul Dumneavoastra nu este PRIM");
             }
-            
+            if (n == 0)
+            {
+                MessageBox.Show("Te rog, scrie un numar diferit de 0");
+            }
+            if (n >= 9999)
+            {
+                MessageBox.Show("Te rog, introdu un numar mai mic");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

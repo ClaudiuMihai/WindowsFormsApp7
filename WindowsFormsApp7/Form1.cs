@@ -53,20 +53,20 @@ namespace WindowsFormsApp7
             if (ok == 1)
             {
                 BackColor = Color.Green;
-                label1.Text = ("Numarul Dumneavoastra este PRIM");
+                label1.Text = ("Numarul Dumneavoastra este PRIM!");
             }
             else
             {
                 BackColor = Color.Red;
-                label1.Text = ("Numarul Dumneavoastra nu este PRIM");
+                label1.Text = ("Numarul Dumneavoastra nu este PRIM!");
             }
             if (n == 0)
             {
-                MessageBox.Show("Te rog, scrie un numar diferit de 0");
+                MessageBox.Show("Te rog, scrie un numar diferit de 0!");
             }
-            if (n >= 9999)
+            if (n >= 99999)
             {
-                MessageBox.Show("Te rog, introdu un numar mai mic");
+                MessageBox.Show("Te rog, introdu un numar mai mic!");
             }
         }
 
